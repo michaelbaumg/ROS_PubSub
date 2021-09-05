@@ -1,0 +1,8 @@
+prefix=/home/mike/motius/devel
+
+Name: ti
+Description: Description of ti
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

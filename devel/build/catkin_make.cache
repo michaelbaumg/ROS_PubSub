@@ -1,0 +1,2 @@
+ti
+-DCATKIN_DEVEL_PREFIX=/home/mike/motius/devel -DCMAKE_INSTALL_PREFIX=/home/mike/motius/install -G Unix Makefiles
