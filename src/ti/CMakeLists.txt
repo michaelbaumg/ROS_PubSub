@@ -109,6 +109,9 @@ catkin_package(
 #  DEPENDS system_lib
 )
 
+add_executable(listener src/listener.cpp)
+target_link_libraries(listener ${catkin_LIBRARIES})
+
 ###########
 ## Build ##
 ###########
