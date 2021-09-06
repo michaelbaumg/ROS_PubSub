@@ -5,6 +5,9 @@ In this function it prints "I heard " and the received string
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 
+double start_time(0.0);
+double current_time(0.0);
+
 // Callback function
 void chatterCallback(const std_msgs::String::ConstPtr& msg)
 {

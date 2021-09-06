@@ -4,6 +4,7 @@ Write hello world with the current time to the console and publish this string o
 """
 import rospy
 from std_msgs.msg import String
+from datetime import datetime
 
 
 # Define the function to print and publish the string
@@ -22,7 +23,7 @@ def talker():
     while not rospy.is_shutdown():
 
         # Define output string
-        hello_str = "hello world %s" % rospy.get_time()
+        hello_str = "hello world " + datetime.now().strftime("%d/%m/%Y %H:%M:%S")
 
         # Print string to console as info
         rospy.loginfo(hello_str)
